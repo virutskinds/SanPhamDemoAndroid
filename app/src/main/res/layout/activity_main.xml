@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarmanhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#2196F3"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                app:titleTextColor="@color/white">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle">
+                </androidx.appcompat.widget.SearchView>
+            </androidx.appcompat.widget.Toolbar>
+
+                    <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </ViewFlipper>
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="68dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/asus"
+                        android:contentDescription="TODO" />
+
+                    <ImageView
+                        android:layout_width="71dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/msi"
+                        android:contentDescription="TODO" />
+
+                    <ImageView
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dell"
+                        android:contentDescription="TODO" />
+
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/apple"
+                        android:contentDescription="TODO" />
+                    <ImageView
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chuyentrangsamsung8_7"
+                        android:contentDescription="TODO" />
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/xiaomi2"
+                        android:contentDescription="TODO" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vs"
+                        android:contentDescription="TODO" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/toolbar">
+            <ListView
+                android:id="@+id/listviewmanhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
