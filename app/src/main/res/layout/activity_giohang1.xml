@@ -85,7 +85,7 @@
         <Button
             android:id="@+id/buttonthanhtoangiohang"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:textStyle="bold"
             android:backgroundTint="#03A9F4"
@@ -102,7 +102,7 @@
         android:textSize="18sp"
         android:id="@+id/buttontieptucmuahang"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="match_parent"
         android:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>
